@@ -20,6 +20,8 @@ jobs:
           scope: '@nillixit'
       - name: Install dependencies
         run: yarn
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       - name: Build package
         run: yarn build
       - name: Publish package
