@@ -1,0 +1,42 @@
+{
+  "name": "@nillixit/minecraft-auth-ely",
+  "version": "1.0.2",
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com/"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/NillixIT/minecraft-auth-ely.git"
+  },
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "tsc",
+    "test": "jest",
+    "test:watch": "jest --watch",
+    "test:coverage": "jest --coverage",
+    "test:manual": "npx ts-node tests/manual-test.ts"
+  },
+  "license": "MIT",
+  "dependencies": {
+    "@nillixit/minecraft-auth-types": "1.0.2",
+    "dotenv": "^17.2.0",
+    "node-fetch": "2"
+  },
+  "devDependencies": {
+    "@types/jest": "^30.0.0",
+    "@types/node-fetch": "2",
+    "jest": "^30.0.4",
+    "nock": "^14.0.5",
+    "ts-jest": "^29.4.0",
+    "ts-node": "^10.9.2"
+  },
+  "pnpm": {
+    "onlyBuiltDependencies": [
+      "unrs-resolver"
+    ]
+  }
+}
